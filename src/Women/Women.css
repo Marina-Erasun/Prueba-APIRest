@@ -1,0 +1,196 @@
+.barra-superior {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 0;
+  background-color: rgba(253, 220, 71, 0.959);
+  height: 8rem;
+}
+@media (max-width: 768px) {
+  .barra-superior {
+    height: auto; 
+    min-height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .barra-superior {
+    height: auto; 
+    min-height: auto;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+}
+
+.titulo-section {
+  text-align: center;
+  color: rgb(12, 12, 12);
+  text-shadow: 5px 5px 5px rgb(5, 5, 8);
+  margin-top: 0.5rem;
+  font-size: 4rem;
+  margin-left: rem;
+}
+
+.women-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto; 
+  width: 90%; 
+  max-width: 600px; 
+  background-color: rgba(253, 220, 71, 0.959);
+  padding: 1rem;
+}
+
+.women-form textarea,
+.women-form input,
+.women-form button {
+  margin-bottom: 0.5rem; 
+  padding: 0.75rem; 
+  font-size: 1rem;
+}
+
+.women-form textarea {
+  height: 4rem; 
+}
+
+.women-form button {
+  background-color: #f3b91b;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.women-form button:hover {
+  background-color: #f58319;
+}
+
+
+.tableContainer {
+  overflow-x: auto;
+  margin: 20px;
+  padding: 0 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.btn-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #f3b91b;
+}
+
+.edit-button:hover,
+.btn-container button:hover {
+  color: #f3b91b;
+}
+
+.delete-button {
+  color: #f58319;
+}
+
+.delete-button:hover {
+  color: #f58319;
+}
+
+.formModal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.formModal input,
+.formModal textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.formModal button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f3b91b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formModal button:hover {
+  background-color: #f58319;
+}
+
+
+@media (max-width: 768px) {
+  .women-form {
+    padding: 15px;
+  }
+
+  .formModal {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .btn-container button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .women-form input,
+  .women-form textarea,
+  .formModal input,
+  .formModal textarea {
+    font-size: 14px;
+  }
+}
+
+.formContainerModal {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: auto; 
+}
+
